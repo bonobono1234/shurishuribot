@@ -57,6 +57,6 @@ async def on_message(message):
        else:
            await message.delete()
            await message.channel.send("당신은 쭈니가 아닙니다!")
-        access_token = os.environ["BOT_TOKEN"]
+        access_token = os.environ['BOT_TOKEN']
 client.run(access_token)
 
