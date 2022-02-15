@@ -1,8 +1,6 @@
 import discord, datetime
-TOKEN = 'OTM4MDUyMTAzODMyNzU2MjY2.YfkrGQ.u0r3XEEAddCMGFb43WqFv4rdwfo'
+
 client = discord.Client()
-
-
 
 @client.event
 async def on_ready(): 
@@ -59,5 +57,6 @@ async def on_message(message):
        else:
            await message.delete()
            await message.channel.send("당신은 쭈니가 아닙니다!")
-client.run(TOKEN)
+        access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
 
