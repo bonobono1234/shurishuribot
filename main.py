@@ -13,6 +13,9 @@ async def on_message(message):
    
     if message.content == "^map":
         await message.channel.send("https://sheepfarm.io/map")       
+        
+    if message.content == "^map":
+        await message.channel.send("https://sheepfarm.io/map")      
    
     if message.content == "^medium":
         await message.channel.send("https://medium.com/@sheepfarm")       
